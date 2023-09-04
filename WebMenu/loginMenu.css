@@ -1,0 +1,129 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/* ==== Global ==== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none; /* linklerde ki alt çizgiyi kaldırmak için kullanırız. */
+}
+
+ul{
+    list-style: none;
+}
+
+.active{
+    color: #fc036b;
+    text-decoration: underline; /*yazının altına çizgi ekler*/
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(resim/header-bg.png);
+    background-position: bottom;  /* Arka plana eklenen resmin pozisyonunu belirtmek için */
+    background-size: cover;  /* esmin boyutlarını tanımlamamıza yarar. tam oturtur.*/
+    display: flex;
+    /* align-items: center;*/   /*yatay eksende hizalar */
+    align-items: flex-end;
+    justify-content: center;  /* dikey eksende hizalar*/
+}
+
+.header-content{
+    margin-bottom: 150px;  /* lt tarafına (alt kenarına) boşluk eklemek için kullanılır. */
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;  /* dört kenarına 10 piksel genişliğinde bir boşluk (margin) bırakılacaktır. */
+                        /* auto : sol ve sağ marjinleri eşit olacak şekilde, elemanın kendisi yatayda merkezlenir.*/
+    border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 7vmin;   /* 7vmin 70 piksel (genişlik ve yüksekliğin yüzde yediği) */
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;  /*kenarları oval yapar*/
+    color: whitesmoke;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Mobile device */
+@media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+}
+

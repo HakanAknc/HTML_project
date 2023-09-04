@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,600;0,700;1,700&display=swap');
+
+
+* {
+    margin: 0;  /*  kenar çizgisine boşluk verir */
+    padding: 0;  /*İç kenarlıklarla boşluk */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    text-align: left; /* sola hizalar */
+    margin-left: 200px;  /* kenar boşluğu bırakır */
+    align-items: center;  /* login ekranının oluşmasını sağlar*/
+    min-height: 100vh;
+    background: url(img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login {
+    width: 420px;
+    border-radius: 20px;  /*kenarıkları ovalliğini ayarlıyor*/
+    padding: 50px 40px;
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter: blur(30px);   /* bulanıklık verir */
+    box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+    color: black;
+}
+
+.login h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+.login .input-box {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: 30px 0px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white
+}
+
+.input-box input::placeholder {
+    color: white
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.login .login-box {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.login-box label input {
+    accent-color: #fff;
+    margin-right: 3px;
+
+}
+
+.login-box a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+.login .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.login .login-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.login-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link p a:hover {
+    text-decoration: underline;
+}
+
+#p-etiket{
+    color: #fff;
+    font-size: 15px;
+}
+
+#label-etiket{
+    color: #fff;
+}
+
+i{
+    color: #fff;
+}
+

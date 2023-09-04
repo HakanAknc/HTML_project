@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Chorasmian&family=Poppins:ital,wght@0,100;0,200;0,600;0,700;1,700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    position: absolute;  /* ? resmin üzerine yazı yazar */
+    color: white;
+    font-size: 25px;
+    left: 550px;
+    letter-spacing: 7px;
+    text-align: 100px;
+}
+
+h1{
+    position: absolute;
+    top: 220px;   /* aşağa kaydırır*/
+    left: 270px;  /* sola doğru kaydırır*/
+    letter-spacing: 10px;  /*harfler arasında boşluk bırakır*/
+    word-spacing: 30px;   /* kelimeler arasında boşluk bırakır */
+    color: white;
+    font-size: 85px;
+}
+
+body {
+    min-height: 90vh;  /* resmin genişiliğini ve yükseklğini ayarlıyor */
+    background: url(img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    position: absolute;
+    top: 490px;
+    left: 630px;
+    background-color: white;
+    color: black;
+    padding: 14px 40px;  /* buton boyutu ayarlar */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;  /* mouse işaretçisinin stilini belirlemek için kullanılır. */
+  }

@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header/logo Title */
+
+
+.header {
+    background-image: url("resimler/2.png");
+    min-height: 900px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+h1{
+    color: rgba(244, 87, 86, 0.8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90px;
+    margin-left: 165px;
+    margin-bottom: 175px;
+}
+
+
+.header-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 100px 12%;
+}
+
+.header-button button {
+    margin-top: auto;
+    /* Bu özellik ile yukarıdaki boşluğu doldurur. Butonun iç özellikleri */
+    padding: 10px 80px;
+    font-size: 20px;
+    background-color: rgba(244, 87, 86, 255);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header-button button:hover {
+    background-color: rgba(244, 87, 86, 0.8);
+}
+
+
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: rgba(38, 51, 80, 255);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 34px 40px;
+    /* yandan ve üsten boşluk bırakır*/
+    text-decoration: none;
+    /* link altındaki çizgiyi kaldırır*/
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    /* Fareyle üzerine gelindiğinde rengi değiştir */
+    background-color: whitesmoke;
+    color: blue;
+}
+
+/* Column container */
+.row {
+    display: -ms-flexbox;
+    /* ! */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: rgb(223, 216, 216);
+    padding: 60px;
+}
+
+/* Main column */
+.main {
+    -ms-flex: 70%;
+    flex: 60%;
+    background-color: rgb(213, 223, 209);
+    padding: 40px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 50px;
+    height: 60px;
+}
+
+#fake-id {
+    height: 200px;
+}
+
+/* Footer */
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: darkcyan;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+/* Duyarlı düzen - ekran genişliği 700 pikselden az olduğunda, iki sütunun yan yana olmak yerine üst üste istiflenmesini sağlayın */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+/* Duyarlı düzen - ekran genişliği 400 pikselden az olduğunda, gezinme bağlantılarının yan yana olmak yerine üst üste yığılmasını sağlayın */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}

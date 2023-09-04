@@ -1,0 +1,80 @@
+body {
+    min-height: 70vh;
+    /* resmin genişiliğini ve yükseklğini ayarlıyor */
+    background: url(img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu {
+    /* background-color: rgb(204, 196, 188); */
+    backdrop-filter: blur(30px);   
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;/*Kenarlıkları yuvarlama*/
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 330px;
+}
+
+.menu-h1 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: white;
+    font-size: 65px;
+    letter-spacing: 13px;
+    top: 20px;
+    padding-top: 25px;
+}
+
+p {
+    color: white;
+    margin-top: 30px;
+    height: 35px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+#p1 {
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+#p2 {
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+#p3 {
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+#p4 {
+    text-align: right;
+    margin-right: 40px;
+    margin-top: -185px;
+    font-weight: bold;
+}
+
+#p5 {
+    text-align: right;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+#p6 {
+    text-align: right;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    border-left: 3px solid white;
+    height: 255px;
+    width: 5px;
+    margin-top: -220px;
+}
